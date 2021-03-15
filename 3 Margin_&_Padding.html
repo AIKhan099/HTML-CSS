@@ -1,0 +1,84 @@
+<html>
+    <head> <title> Margin & Padding</title>
+    
+    <style>
+        div#m{
+
+            height: 100px;
+            width: 200px;
+            background-color: rgb(85, 209, 85);
+            margin-top: 100px;
+            margin-left: 200px;
+            /*  Margin always carry space and work against the refrence. Now if we define margin_botton : 100
+            it will not work bec refrence is either too far or not exists.*/
+             
+            
+            
+
+            /* Moreover, Margin also carried space. Right now, it can be said that the more margin will be away
+            from top and left side the more it will carry space.*/
+        }
+
+        div#m2{
+
+        height: 100px;
+        width: 100px;
+        background-color: rgb(85, 209, 85);
+        margin-top: 100px;
+        /*margin-left: 200px;*/
+        margin: -50;
+
+        /* Margin also has negative values. Iitially, in div#m margin was moved towards right by the value 
+            of 200 pixel which happened bec of Margin-left : 200. 
+            
+            Now, in div#m2 margin will move towards left with the value 
+            of -50* towards left*/
+
+    
+    
+    }
+
+        div#m3{
+            /* Shorthand Property of Margin:
+            Here, there will be maximum 4 of minimum 1 value against margin in the following particular way:margin:
+
+            margin: top_value right_value, bottom_value, left_value
+
+            Here, any number of parameter can be given values but keep in mind that the order will be similar to 
+            above mentioned rule that first value will be of top_margina and so on.
+            */
+
+        height: 100px;
+        width: 100px;
+        background-color: rgb(85, 209, 85);
+        margin : 100px 0px 0px 100px;
+
+}
+
+
+
+    </style>
+    
+    
+    
+    </head>
+
+    <body>
+        <div id="m">
+            <h1 style=" color:red"> Awais Imran</h1>
+        </div>
+        
+        
+        <div id="m2"><h2>
+            Khan
+            </h2></div>
+
+        
+        </div>
+        <div id="m3"><h2>
+            Pakistan
+            </h2></div>
+
+        
+    </body>
+</html>
